@@ -9,8 +9,9 @@ def main(page: ft.Page):
         counter.value = str(counter.data)
         counter.update()
 
+    # Use the icons module (lowercase) provided by flet
     page.floating_action_button = ft.FloatingActionButton(
-        icon=ft.Icons.ADD, on_click=increment_click
+        icon=ft.icons.ADD, on_click=increment_click
     )
     page.add(
         ft.SafeArea(
